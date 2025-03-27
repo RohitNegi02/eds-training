@@ -1,7 +1,6 @@
 import { loadCSS } from '../../scripts/lib-franklin.js';
 
 const fetchRSSFeed = async () => {
-  console.log("hello");
   try {
     const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_74190f1a09ff0aad8b8e1dd35167f33e536f6&q=technology&country=us&language=en');
     if (!response.ok) throw new Error('Failed to fetch RSS feed');
@@ -35,7 +34,6 @@ const renderRSSFeed = (rssFeedItems, block) => {
 };
 
 export default async function decorate(block) {
-   console.log("helloii");
   loadCSS('/blocks/rss-feed/rss-feed.css');
 
   const rssFeedItems = await fetchRSSFeed();
