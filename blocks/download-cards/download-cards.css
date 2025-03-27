@@ -40,8 +40,7 @@
   width: calc(100% + 40px); /* Ensuring the image takes the full card width including padding */
   height: 200px; /* Ensuring uniform height for all images */
   object-fit: cover; /* Maintain aspect ratio and cover space */
-  margin-left: -20px; /* Adjusting for padding */
-  margin-right: -20px; /* Adjusting for padding */
+ 
 }
 
 .download-cards .download-cards-card h3 { 
