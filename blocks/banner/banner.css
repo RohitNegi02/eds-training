@@ -1,0 +1,75 @@
+.banner-content {
+  max-width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.banner-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.banner-title h1,
+.banner-title h2,
+.banner-title p {
+  color: #000;
+  margin: 5px 0;
+}
+
+.temperature-info {
+ 
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: auto;
+   height: 150px; /* Explicitly set the height to reduce the length */
+  overflow: auto;
+}
+
+.temperature-info ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.temperature-info li {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .banner-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .text-container,
+  .temperature-info {
+   /* Move temperature-info div to come first in mobile view */
+    width: 100%;
+    padding-left:10px;
+	padding-right: 0px;
+	
+  }
+  
+  .text-container {
+    width: 100%;
+    padding: 0;
+  }
+}

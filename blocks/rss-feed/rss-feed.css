@@ -1,0 +1,85 @@
+.rss-feed { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 16px; 
+  padding-top: 25px;
+} 
+
+.rss-feed .rss-feed-card { 
+  border: 1px solid #ccc; 
+  padding: 16px; 
+  width: calc(25% - 12px); 
+  box-sizing: border-box; 
+  background-color: #fff;
+  position: relative;
+} 
+
+.rss-feed .rss-feed-card img { 
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 12px;
+} 
+
+.rss-feed .rss-feed-card h3 { 
+  font-size: 1.2em; 
+  margin: 10px 0; 
+  color: #333;
+} 
+
+.rss-feed .rss-feed-card a { 
+  text-decoration: none; 
+  color: #2a5db0; 
+} 
+
+.rss-feed .rss-feed-card a:focus {
+  outline: 2px solid #2a5db0;
+}
+
+.rss-feed .rss-feed-card p { 
+  font-size: 0.9em; 
+  color: #666; 
+  margin-bottom: 8px;
+} 
+
+.rss-feed .rss-feed-card .source-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.rss-feed .rss-feed-card .source-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.rss-feed .rss-feed-card .source-info span {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.rss-feed .rss-feed-card time { 
+  font-size: 0.8em; 
+  color: #999; 
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+} 
+
+@media (max-width: 768px) { 
+  .rss-feed { 
+     
+    padding-left: 8px;
+  } 
+  .rss-feed .rss-feed-card { 
+    width: calc(50% - 12px); 
+   
+  } 
+} 
+
+@media (max-width: 480px) { 
+  .rss-feed .rss-feed-card { 
+    width: 100%; 
+  } 
+}
