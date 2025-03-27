@@ -27,13 +27,13 @@
   border: 1px solid #ddd; 
   border-radius: 8px; 
   overflow: hidden; 
-  width: 300px; 
+  width: 370px; 
   text-align: center; 
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Aligns items evenly */
-  padding: 0px 20px 10px 20px;/* Adding padding for consistent layout */
+  padding: 0px 0px 10px 0px;/* Adding padding for consistent layout */
 }
 
 .download-cards .download-cards-card img { 
