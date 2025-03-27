@@ -1,0 +1,81 @@
+.download-cards { 
+  font-family: Arial, sans-serif; 
+  color: #333; 
+  padding: 20px; 
+}
+
+.download-cards h2 { 
+  font-size: 24px; 
+  margin-bottom: 10px; 
+}
+
+.download-cards p { 
+  font-size: 16px; 
+  margin-bottom: 20px; 
+  line-height: 1.5; 
+}
+
+.download-cards-grid { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-around; 
+}
+
+.download-cards .download-cards-card { 
+  background: #fff; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  width: 300px; 
+  text-align: center; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns items evenly */
+  padding: 0px 20px 10px 20px;/* Adding padding for consistent layout */
+}
+
+.download-cards .download-cards-card img { 
+  width: calc(100% + 40px); /* Ensuring the image takes the full card width including padding */
+  height: 200px; /* Ensuring uniform height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover space */
+  margin-left: -20px; /* Adjusting for padding */
+  margin-right: -20px; /* Adjusting for padding */
+}
+
+.download-cards .download-cards-card h3 { 
+  font-size: 18px; 
+  margin: 20px 0; /* Ensures consistent gap between image and title */
+}
+
+.download-cards .download-cards-card button { 
+  background-color: #ffcc00; 
+  border: none; 
+  padding: 10px 20px; 
+  color: #fff; 
+  font-size: 16px; 
+  cursor: pointer; 
+  margin-top: auto; /* Pushes button to the bottom consistently */
+  margin-bottom: 0; /* Ensures consistent bottom spacing */
+  align-self: center; /* Center the button horizontally */
+}
+
+.download-cards .download-cards-card button:hover { 
+  background-color: #e6b800; 
+}
+
+@media (max-width: 768px) { 
+  .download-cards-grid { 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .download-cards .download-cards-card { 
+    width: 90%; 
+  }
+
+  button{
+    width: 90%; 
+  }
+}
