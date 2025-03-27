@@ -34,6 +34,7 @@ const renderRSSFeed = (rssFeedItems, block) => {
 };
 
 export default async function decorate(block) {
+  console.log("dsds");
   loadCSS('/blocks/rss-feed/rss-feed.css');
 
   const rssFeedItems = await fetchRSSFeed();
